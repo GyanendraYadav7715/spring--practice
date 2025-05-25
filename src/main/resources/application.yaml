@@ -1,7 +1,9 @@
-
-
-stripe:
-   apiUrl:http://api.store.com
-   timeout:1000
-   enabled:true
-   supported-currencies:USD,EUR,RUP
+spring:
+  application:
+    name: store
+  datasource:
+    url: jdbc:mysql://localhost:3306/stores?createDatabaseIfNotExist=true
+    username: root
+    password: 7539
+  jpa:
+    show-sql: true
